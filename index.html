@@ -3,185 +3,889 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>خرسانة جاهزة توريد في الرياض | الرياض للخرسانة</title>
-<meta name="description" content="خرسانة جاهزة للتوريد في الرياض بجودة عالية ودقة في المواعيد وسرعة في التنفيذ. اتصل الآن 0500941440">
+
+<title>شركة خرسانة إعمار العربية | خرسانة جاهزة</title>
+
+<meta name="description" content="شركة خرسانة إعمار العربية للخرسانة الجاهزة في الرياض. جودة عالية، دقة في المواعيد وسرعة في التنفيذ. خلطات خرسانية من C15 إلى C40.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
 body{
-font-family:Arial,Tahoma,sans-serif;
-background:#f5f7fa;
-color:#17202a;
-line-height:1.8
+font-family:"Cairo",Arial,sans-serif;
+background:#fff;
+color:#17352a;
+line-height:1.8;
 }
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+.container{
+width:min(1150px,92%);
+margin:auto;
+}
+
+/* HEADER */
+header{
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(255,255,255,.96);
+backdrop-filter:blur(12px);
+border-bottom:1px solid #e5eee9;
+}
+
+.nav{
+height:82px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:25px;
+}
+
+.logo{
+width:165px;
+height:60px;
+object-fit:contain;
+}
+
+nav{
+display:flex;
+align-items:center;
+gap:28px;
+font-weight:700;
+}
+
+nav a{
+color:#23463a;
+transition:.25s;
+}
+
+nav a:hover{
+color:#0b9b5b;
+}
+
+.nav-btn{
+background:#0b9b5b;
+color:#fff;
+padding:11px 20px;
+border-radius:12px;
+font-weight:800;
+box-shadow:0 8px 20px rgba(11,155,91,.2);
+}
+
+/* HERO */
 .hero{
-background:linear-gradient(135deg,#111827,#263238);
-color:white;
-padding:60px 20px 70px;
-text-align:center
+position:relative;
+min-height:650px;
+display:flex;
+align-items:center;
+overflow:hidden;
+background:
+linear-gradient(90deg,rgba(4,37,25,.88),rgba(4,37,25,.45)),
+url("IMG_0038.webp") center/cover;
 }
-.hero h1{font-size:38px;margin-bottom:15px}
-.hero p{font-size:22px;color:#e5e7eb}
+
+.hero-content{
+width:min(1150px,92%);
+margin:auto;
+color:#fff;
+padding:90px 0;
+}
+
 .badge{
 display:inline-block;
-background:#f59e0b;
-color:#111;
-padding:7px 18px;
-border-radius:30px;
-font-weight:bold;
-margin-bottom:20px
+background:rgba(255,255,255,.13);
+border:1px solid rgba(255,255,255,.3);
+padding:8px 18px;
+border-radius:50px;
+margin-bottom:20px;
+font-weight:700;
 }
-.container{
-max-width:1050px;
-margin:auto;
-padding:30px 18px
+
+.hero h1{
+font-size:clamp(38px,6vw,68px);
+line-height:1.2;
+max-width:800px;
+font-weight:900;
+margin-bottom:22px;
 }
-.cards{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:18px;
-margin-top:-35px
+
+.hero h1 span{
+color:#45d78e;
 }
-.card{
-background:white;
-border-radius:18px;
-padding:25px 15px;
-text-align:center;
-box-shadow:0 8px 25px #00000012
+
+.hero p{
+font-size:20px;
+max-width:680px;
+color:#eaf7f0;
+margin-bottom:32px;
 }
-.card .icon{font-size:38px}
-.card h2{font-size:21px;margin-top:8px}
-section{
-background:white;
-margin:25px 0;
-padding:35px 22px;
-border-radius:20px
-}
-section h2{
-text-align:center;
-font-size:29px;
-margin-bottom:20px
-}
-.services{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:14px
-}
-.service{
-background:#f8fafc;
-border-right:5px solid #f59e0b;
-padding:17px;
-border-radius:10px;
-font-weight:bold
-}
-.contact{
-background:#111827;
-color:white;
-text-align:center
-}
-.contact h2{color:white}
-.phone{
-font-size:32px;
-font-weight:bold;
-margin:15px 0
-}
+
 .buttons{
 display:flex;
-justify-content:center;
-gap:12px;
-flex-wrap:wrap
+gap:14px;
+flex-wrap:wrap;
 }
+
 .btn{
-display:inline-block;
-text-decoration:none;
-padding:14px 28px;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:9px;
+padding:14px 24px;
 border-radius:12px;
-font-weight:bold;
-font-size:19px
+font-weight:800;
+transition:.25s;
 }
-.call{background:#f59e0b;color:#111}
-.whatsapp{background:#25d366;color:white}
-footer{
+
+.btn-green{
+background:#0b9b5b;
+color:#fff;
+box-shadow:0 10px 25px rgba(0,0,0,.18);
+}
+
+.btn-white{
+background:#fff;
+color:#126342;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+/* FEATURES */
+.features{
+margin-top:-55px;
+position:relative;
+z-index:5;
+}
+
+.feature-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.feature{
+background:#fff;
+border-radius:20px;
+padding:30px;
+box-shadow:0 15px 45px rgba(21,64,45,.12);
+border:1px solid #edf4f0;
+}
+
+.icon{
+width:62px;
+height:62px;
+border-radius:18px;
+background:#e8f8ef;
+display:flex;
+align-items:center;
+justify-content:center;
+margin-bottom:18px;
+}
+
+.icon svg{
+width:34px;
+height:34px;
+stroke:#0b9b5b;
+}
+
+.feature h3{
+font-size:21px;
+margin-bottom:6px;
+}
+
+.feature p{
+color:#6b7d75;
+}
+
+/* SECTIONS */
+section{
+padding:95px 0;
+}
+
+.section-title{
 text-align:center;
-padding:25px;
-color:#667085
+margin-bottom:50px;
 }
-@media(max-width:700px){
-.hero h1{font-size:30px}
-.hero p{font-size:18px}
-.cards{grid-template-columns:1fr}
-.services{grid-template-columns:1fr}
-.phone{font-size:27px}
+
+.section-title small{
+color:#0b9b5b;
+font-weight:900;
+font-size:15px;
+}
+
+.section-title h2{
+font-size:clamp(30px,4vw,45px);
+margin:8px 0 12px;
+font-weight:900;
+}
+
+.section-title p{
+color:#71827b;
+max-width:650px;
+margin:auto;
+}
+
+/* ABOUT */
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:55px;
+align-items:center;
+}
+
+.about-image{
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 20px 50px rgba(0,0,0,.12);
+}
+
+.about-image img{
+width:100%;
+height:420px;
+object-fit:cover;
+}
+
+.about h2{
+font-size:42px;
+line-height:1.3;
+margin-bottom:20px;
+}
+
+.about p{
+color:#687a72;
+margin-bottom:18px;
+}
+
+.checks{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:13px;
+margin-top:25px;
+}
+
+.check{
+font-weight:700;
+display:flex;
+align-items:center;
+gap:9px;
+}
+
+.check svg{
+width:22px;
+height:22px;
+stroke:#0b9b5b;
+}
+
+/* MIXES */
+.mix-section{
+background:#f5faf7;
+}
+
+.mix-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.mix{
+background:#fff;
+border-radius:22px;
+padding:28px;
+text-align:center;
+border:1px solid #e4eee9;
+transition:.3s;
+}
+
+.mix:hover{
+transform:translateY(-7px);
+box-shadow:0 18px 40px rgba(11,100,60,.1);
+}
+
+.mix-number{
+font-size:42px;
+font-weight:900;
+color:#0b9b5b;
+}
+
+.mix h3{
+font-size:21px;
+margin:8px 0;
+}
+
+.mix p{
+color:#78877f;
+}
+
+/* PROJECTS */
+.projects{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+}
+
+.project{
+position:relative;
+border-radius:24px;
+overflow:hidden;
+height:360px;
+box-shadow:0 15px 40px rgba(0,0,0,.12);
+}
+
+.project img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:.5s;
+}
+
+.project:hover img{
+transform:scale(1.06);
+}
+
+.project-overlay{
+position:absolute;
+inset:auto 0 0;
+padding:70px 25px 25px;
+background:linear-gradient(transparent,rgba(0,0,0,.85));
+color:#fff;
+}
+
+.project-overlay h3{
+font-size:24px;
+}
+
+/* CONTACT */
+.contact{
+background:#073d29;
+color:#fff;
+}
+
+.contact-box{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.contact h2{
+font-size:42px;
+line-height:1.3;
+margin-bottom:15px;
+}
+
+.contact p{
+color:#d8ebe2;
+}
+
+.contact-card{
+background:#fff;
+color:#183d2f;
+border-radius:25px;
+padding:30px;
+}
+
+.contact-row{
+display:flex;
+align-items:center;
+gap:15px;
+padding:16px 0;
+border-bottom:1px solid #e8eee9;
+}
+
+.contact-row:last-child{
+border-bottom:0;
+}
+
+.contact-icon{
+width:48px;
+height:48px;
+border-radius:14px;
+background:#e8f8ef;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.contact-icon svg{
+width:25px;
+height:25px;
+stroke:#0b9b5b;
+}
+
+/* FLOATING PHONE */
+.float-phone{
+position:fixed;
+left:22px;
+bottom:22px;
+z-index:2000;
+width:62px;
+height:62px;
+border-radius:50%;
+background:#0b9b5b;
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 12px 30px rgba(0,0,0,.25);
+}
+
+.float-phone svg{
+width:30px;
+height:30px;
+stroke:#fff;
+}
+
+/* FOOTER */
+footer{
+background:#04281b;
+color:#b9d0c5;
+padding:30px 0;
+text-align:center;
+}
+
+footer strong{
+color:#fff;
+}
+
+/* MOBILE */
+@media(max-width:850px){
+
+nav{
+display:none;
+}
+
+.nav{
+height:72px;
+}
+
+.logo{
+width:145px;
+}
+
+.hero{
+min-height:580px;
+}
+
+.hero-content{
+padding:70px 0;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+.feature-grid,
+.mix-grid{
+grid-template-columns:1fr;
+}
+
+.about,
+.contact-box{
+grid-template-columns:1fr;
+}
+
+.about h2,
+.contact h2{
+font-size:34px;
+}
+
+.projects{
+grid-template-columns:1fr;
+}
+
+.project{
+height:300px;
+}
+
+.checks{
+grid-template-columns:1fr;
+}
+
+.features{
+margin-top:-30px;
+}
+
+section{
+padding:70px 0;
+}
 }
 </style>
 </head>
 
 <body>
 
-<header class="hero">
-<div class="badge">توريد خرسانة جاهزة في الرياض</div>
-<h1>خرسانة جاهزة توريد في الرياض</h1>
-<p>جودة عالية • دقة في المواعيد • سرعة في التنفيذ</p>
+<header>
+<div class="container nav">
+
+<img class="logo" src="IMG_0082.jpeg" alt="شركة خرسانة إعمار العربية">
+
+<nav>
+<a href="#about">من نحن</a>
+<a href="#mix">الخلطات</a>
+<a href="#projects">مشاريعنا</a>
+<a href="#contact">تواصل معنا</a>
+</nav>
+
+<a class="nav-btn" href="https://wa.me/966500941440">
+واتساب
+</a>
+
+</div>
 </header>
 
-<main class="container">
 
-<div class="cards">
-<div class="card">
-<div class="icon">🏗️</div>
-<h2>جودة عالية</h2>
-<p>خرسانة جاهزة بجودة ممتازة للمشاريع المختلفة.</p>
-</div>
+<section class="hero">
 
-<div class="card">
-<div class="icon">⏱️</div>
-<h2>دقة في المواعيد</h2>
-<p>التزام بمواعيد التوريد حسب احتياج مشروعك.</p>
-</div>
+<div class="hero-content">
 
-<div class="card">
-<div class="icon">🚚</div>
-<h2>سرعة في التنفيذ</h2>
-<p>تجهيز وتوريد سريع لموقع المشروع في الرياض.</p>
-</div>
-</div>
+<div class="badge">خرسانة جاهزة • الرياض</div>
 
-<section>
-<h2>خدماتنا</h2>
-<div class="services">
-<div class="service">توريد الخرسانة الجاهزة</div>
-<div class="service">خرسانة للمشاريع الإنشائية</div>
-<div class="service">توريد للمنازل والفلل</div>
-<div class="service">توريد للمشاريع التجارية</div>
-<div class="service">تلبية طلبات المقاولين</div>
-<div class="service">خدمة توريد داخل الرياض</div>
-</div>
-</section>
+<h1>
+نبني أساسك بـ
+<span>جودة تثق بها</span>
+</h1>
 
-<section>
-<h2>لماذا تختارنا؟</h2>
-<p style="text-align:center;font-size:19px">
-نقدم خدمة توريد خرسانة جاهزة في الرياض مع التركيز على الجودة،
-الالتزام بالمواعيد وسرعة الاستجابة لاحتياجات العملاء والمقاولين.
+<p>
+شركة خرسانة إعمار العربية للخرسانة الجاهزة
+نقدم حلول خرسانية موثوقة للمشاريع السكنية والتجارية والمشاريع الكبرى.
 </p>
-</section>
-
-<section class="contact">
-<h2>اطلب الخرسانة الآن</h2>
-<p>للاستفسار وطلب التوريد تواصل معنا مباشرة</p>
-
-<div class="phone">0500941440</div>
 
 <div class="buttons">
-<a class="btn call" href="tel:0500941440">📞 اتصال مباشر</a>
-<a class="btn whatsapp" href="https://wa.me/966500941440">💬 واتساب</a>
+
+<a class="btn btn-green" href="tel:0500941440">
+اتصل الآن
+</a>
+
+<a class="btn btn-white" href="https://wa.me/966500941440">
+اطلب الخرسانة عبر واتساب
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="features">
+
+<div class="container feature-grid">
+
+<div class="feature">
+
+<div class="icon">
+<svg fill="none" viewBox="0 0 24 24" stroke-width="1.8">
+<path d="M5 12l4 4L19 6"/>
+<path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"/>
+</svg>
+</div>
+
+<h3>جودة عالية</h3>
+<p>خرسانة بمواصفات دقيقة وجودة نحرص عليها في كل طلب.</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="icon">
+<svg fill="none" viewBox="0 0 24 24" stroke-width="1.8">
+<circle cx="12" cy="12" r="9"/>
+<path d="M12 7v5l3 2"/>
+</svg>
+</div>
+
+<h3>دقة في المواعيد</h3>
+<p>تنسيق دقيق لمواعيد التوريد بما يناسب جدول مشروعك.</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="icon">
+<svg fill="none" viewBox="0 0 24 24" stroke-width="1.8">
+<path d="M13 2L3 14h8l-1 8 11-14h-8z"/>
+</svg>
+</div>
+
+<h3>سرعة في التنفيذ</h3>
+<p>استجابة سريعة وتجهيز منظم لتلبية احتياجات المشاريع.</p>
+
+</div>
+
 </div>
 </section>
 
-</main>
+
+<section id="about">
+
+<div class="container about">
+
+<div class="about-image">
+<img src="IMG_0083.jpeg" alt="مشروع خرسانة جاهزة">
+</div>
+
+<div>
+
+<div class="section-title" style="text-align:right;margin-bottom:20px">
+<small>إعمار العربية</small>
+<h2>شريكك في بناء أقوى</h2>
+</div>
+
+<p>
+نقدم خدمات الخرسانة الجاهزة للمقاولين والأفراد والمشاريع بمختلف أحجامها، مع اهتمام بالجودة والالتزام بالمواعيد وسرعة التوريد.
+</p>
+
+<p>
+نوفر خلطات خرسانية متعددة تناسب مختلف الاستخدامات الإنشائية.
+</p>
+
+<div class="checks">
+
+<div class="check">
+<svg fill="none" viewBox="0 0 24 24" stroke-width="2">
+<path d="M5 12l4 4L19 6"/>
+</svg>
+جودة موثوقة
+</div>
+
+<div class="check">
+<svg fill="none" viewBox="0 0 24 24" stroke-width="2">
+<path d="M5 12l4 4L19 6"/>
+</svg>
+توريد منظم
+</div>
+
+<div class="check">
+<svg fill="none" viewBox="0 0 24 24" stroke-width="2">
+<path d="M5 12l4 4L19 6"/>
+</svg>
+خلطات C15 إلى C40
+</div>
+
+<div class="check">
+<svg fill="none" viewBox="0 0 24 24" stroke-width="2">
+<path d="M5 12l4 4L19 6"/>
+</svg>
+خدمة في الرياض
+</div>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section id="mix" class="mix-section">
+
+<div class="container">
+
+<div class="section-title">
+<small>الخلطات الخرسانية</small>
+<h2>خلطات من C15 إلى C40</h2>
+<p>اختر المقاومة المناسبة حسب متطلبات مشروعك الإنشائي.</p>
+</div>
+
+<div class="mix-grid">
+
+<div class="mix">
+<div class="mix-number">C15</div>
+<h3>خرسانة C15</h3>
+<p>للاستخدامات الإنشائية المناسبة.</p>
+</div>
+
+<div class="mix">
+<div class="mix-number">C20</div>
+<h3>خرسانة C20</h3>
+<p>حل مناسب للعديد من التطبيقات.</p>
+</div>
+
+<div class="mix">
+<div class="mix-number">C25</div>
+<h3>خرسانة C25</h3>
+<p>خيار شائع للمشاريع الإنشائية.</p>
+</div>
+
+<div class="mix">
+<div class="mix-number">C30</div>
+<h3>خرسانة C30</h3>
+<p>مناسبة لمتطلبات مقاومة أعلى.</p>
+</div>
+
+<div class="mix">
+<div class="mix-number">C35</div>
+<h3>خرسانة C35</h3>
+<p>للمشاريع التي تحتاج مقاومة مرتفعة.</p>
+</div>
+
+<div class="mix">
+<div class="mix-number">C40</div>
+<h3>خرسانة C40</h3>
+<p>للتطبيقات ذات متطلبات المقاومة العالية.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section id="projects">
+
+<div class="container">
+
+<div class="section-title">
+<small>مشاريعنا</small>
+<h2>جاهزون لمشروعك</h2>
+<p>توريد الخرسانة للمشاريع السكنية والتجارية والمشاريع الكبرى.</p>
+</div>
+
+<div class="projects">
+
+<div class="project">
+<img src="IMG_0038.webp" alt="خرسانة جاهزة">
+<div class="project-overlay">
+<h3>توريد الخرسانة الجاهزة</h3>
+</div>
+</div>
+
+<div class="project">
+<img src="IMG_0083.jpeg" alt="مشاريع الخرسانة">
+<div class="project-overlay">
+<h3>حلول خرسانية للمشاريع</h3>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section id="contact" class="contact">
+
+<div class="container contact-box">
+
+<div>
+
+<h2>ابدأ مشروعك معنا</h2>
+
+<p>
+للطلب والاستفسار عن الخرسانة الجاهزة والخلطات المتوفرة، تواصل معنا مباشرة.
+</p>
+
+<br>
+
+<a class="btn btn-white" href="https://wa.me/966500941440">
+تواصل عبر واتساب
+</a>
+
+</div>
+
+
+<div class="contact-card">
+
+<div class="contact-row">
+
+<div class="contact-icon">
+<svg fill="none" viewBox="0 0 24 24" stroke-width="1.8">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3.08 5.18 2 2 0 0 1 5.06 3h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L9 10.73a16 16 0 0 0 4.27 4.27l1.27-1.23a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92z"/>
+</svg>
+</div>
+
+<div>
+<strong>رقم الهاتف</strong><br>
+<a href="tel:0500941440">0500941440</a>
+</div>
+
+</div>
+
+
+<div class="contact-row">
+
+<div class="contact-icon">
+<svg fill="none" viewBox="0 0 24 24" stroke-width="1.8">
+<path d="M21 11.5a8.38 8.38 0 0 1-9 8.5 8.8 8.8 0 0 1-4-.9L3 21l1.9-4.7A8.3 8.3 0 0 1 3 11.5 8.5 8.5 0 0 1 12 3a8.5 8.5 0 0 1 9 8.5z"/>
+</svg>
+</div>
+
+<div>
+<strong>واتساب</strong><br>
+<a href="https://wa.me/966500941440">تواصل معنا مباشرة</a>
+</div>
+
+</div>
+
+
+<div class="contact-row">
+
+<div class="contact-icon">
+<svg fill="none" viewBox="0 0 24 24" stroke-width="1.8">
+<path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/>
+<circle cx="12" cy="9" r="2.5"/>
+</svg>
+</div>
+
+<div>
+<strong>منطقة الخدمة</strong><br>
+الرياض والمناطق القريبة
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<a class="float-phone" href="tel:0500941440" aria-label="اتصال">
+
+<svg fill="none" viewBox="0 0 24 24" stroke-width="1.8">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3.08 5.18 2 2 0 0 1 5.06 3h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L9 10.73a16 16 0 0 0 4.27 4.27l1.27-1.23a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92z"/>
+</svg>
+
+</a>
+
 
 <footer>
-© 2026 الرياض للخرسانة - خرسانة جاهزة في الرياض
+<div class="container">
+<strong>شركة خرسانة إعمار العربية</strong>
+<br>
+خرسانة جاهزة في الرياض
+</div>
 </footer>
 
 </body>
